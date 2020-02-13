@@ -12,7 +12,13 @@
     HINT: Lookup .attr()
     */
     $(function() {
-      // Write code here
+      $('a').click((e)=>{
+          e.preventDefault();
+        $(`iframe`).attr("src", e.target.href)
+      console.log(e.target.href)
+      })
+
+      // Write code here 
     });
     </script>
   </head>
